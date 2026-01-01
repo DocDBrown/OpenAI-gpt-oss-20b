@@ -1,0 +1,43 @@
+# .dockerignore
+
+# VCS
+.git
+.gitignore
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode
+.idea
+
+# Node / Python / general build outputs
+node_modules
+dist
+build
+target
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+
+# Logs
+*.log
+
+# Large ML artifacts (adjust to your repo)
+**/*.gguf
+**/*.bin
+**/*.safetensors
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.ckpt
+**/*.tar
+**/*.zip
+**/*.7z
+
+# Docker buildx/cache dirs sometimes committed accidentally
+.buildx-cache
